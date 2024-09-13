@@ -1,0 +1,303 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: whitesmoke;
+}
+nav{
+    display: flex;
+    border-bottom: 1px solid black;
+    justify-content: space-between;
+    align-items: center;
+    width: 70em;
+    background: whitesmoke ;
+    padding: 23px 0px;
+    margin: auto;
+}
+
+.left-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+.left-nav ul{
+    display: flex;
+    gap: 1em;
+}
+
+.left-nav ul li{
+    list-style: none;
+}
+.left-nav ul li a{
+    text-decoration: none;
+    color: #222222;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+.right-nav{
+    display: flex;
+    align-items: center;
+    /* border: solid green; */
+    gap: 1em;
+    padding: 10px 20px;
+}
+.right-nav span{
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 500px;
+}
+.menu{
+    display: none;
+}
+
+/* --------FIRST SECTION------ */
+
+.first-body{
+    /* border: solid red; */
+    display: flex;
+    border-bottom: 1px solid black;
+    justify-content: space-between;
+    align-items: center;
+    width: 70em;
+    padding: 30px 0px;
+    margin: auto;
+}
+
+.left-body{
+    /* border: solid green; */
+    text-align: center;
+    line-height: 1.5em;
+    padding: 20px 50px 0px 0px;
+}
+.right-body h1{
+    color: #000;
+    font-size:32px;
+    /* border: solid yellow; */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0px 0px 8px;
+}
+.right-body p{
+    color: #9CA3AF;
+    font-size: 14px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 6px 0px 0px;
+}
+
+.left-two a{
+    color: #FFF;
+    font-size: 18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: #FB651E;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.left-body p{
+    color: #000;
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 8px 0px 0px;
+}
+.left-body .left-one{
+    color: #000;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    /* border: solid red; */
+}
+.left-one a{
+    color: #222;
+}
+
+
+/* --------SECOND SECTION----- */
+.second{
+    display: flex;
+    width: 83%;
+    margin: auto;
+    border-bottom: thin solid black;
+    justify-content: space-between;
+    padding: 36px 13px 24px 0px;
+}
+.secondone{
+    /* border: solid green; */
+    width: 60%;
+    line-height: 5em;
+    padding: 20px ;
+}
+.Sticky-part{
+    align-self: flex-start;
+    padding: 24px;
+    width: 300px;
+    position: sticky;
+    top: 1rem;
+    background: #FFF;
+}
+.Sticky-part ul{
+    margin: 4px 0px 0px;
+    padding: 0px 20px 0px;
+}
+.Sticky-part ul li{
+    padding: 2px 0px 2px 0px;
+    font-size: 14px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.Sticky-part ul li a{
+    text-decoration: none;
+    color: #000;
+}
+.secondone p{
+    /* border: solid red ; */
+    width: 69%;
+    line-height: 1.5em;
+    margin: 20px 0px;
+}
+.secondone h2{
+    /* border: solid red; */
+    margin: 48px 0px 24px;
+    font-size: 24px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.secondone ol{
+    padding: 0px 20px 0px;
+    line-height: 2rem;
+    width: 69%;
+}
+.secondone a{
+    color: #268BD2;
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.APPLY{
+    /* border: solid red; */
+    padding: 20px 0px ;
+}
+.APPLY a{
+    /* border: solid green; */
+    background: #FB651E;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 8px 16px;
+}
+
+/* --------FOOTER SECTION----- */
+
+.footerbody{
+    margin: 0px 98px;
+    padding: 64px 30px;
+}
+.footerone{
+    /* border: solid green; */
+    display: flex;
+    border-bottom: 1px solid black;
+}
+.footerul{
+    display: flex;
+}
+.footerul div{
+    margin: 0px 0px 0px 64px;
+}
+.footerul div h3{
+    font-size: 16px;
+    color: #222;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.footerul div ul{
+    margin: 8px 0px 0px;
+}
+.footerul div ul li{
+    margin: 4px 0px 0px;
+    list-style: none;
+}
+.footerul div ul li a{
+    text-decoration: none;
+    color: #222;
+    font-size: 14px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.flexstart{
+    /* border: solid green; */
+    flex-grow: 1;
+    text-align: end;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------MEDIA QUERY------ */
+
+@media(max-width:1124px){
+    .right-nav span{
+        display: none;
+    }
+    nav{
+        width: 100%;
+    }
+
+    /* -----FIRST QUERY---- */
+    .first-body{
+        width: 100%;
+    }
+    .left-body{
+        width: none;
+    }
+}
+
+@media(max-width:1024px){
+    /* -----FIRST QUERY---- */
+    .first-body{
+        display: block;
+    }
+
+    /* ------SECOND------ */
+    .second{
+        width: 100%;
+       
+    }
+}
+@media (max-width:781px){
+    .left-nav ul{
+        flex-wrap: wrap;
+    }
+}
+@media (max-width:767px){
+    .image{
+        display: none;
+    }
+}
+@media (max-width:639px){
+    .left-nav ul{
+        display: none;
+    }
+    .right-nav a{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+
+    /* -----FIRST QUERY---- */
+    .first-body{
+        width: 100%;
+    }
+    .left-body{
+        width: 100%;
+    }
+}
