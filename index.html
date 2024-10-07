@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="shortcut icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQEAAAEBCAMAAABPMuDPAAAAQlBMVEXyZSLyZSLyZSLyZSLyZSL6roH91br2ilD+6tr4nGn0eDf7wp3+9e3zbyz3k1z0gUP7uI/5pXX+38n8y6z////yZSKuMvVfAAAABXRSTlOAQMBgICelMzEAAAOgSURBVHhe5MABDQAAAIIw3eifmSB8vA3Zt5vcuGEgCsLeUBSpnxnb4f2vmn068xK5Z8FuFQ8gCB9q80Dw42Pc+3y8UQABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQACBR7GnuAF6MafNKnDsv+xx/+1mv3nOKjDKXwRWbwIWYJl4F6wigvclUCcWaCKCeRKwAtNFoBN4TC1wigjelMA2+S5YRATv+VyfXKC+NYIqEphVQEfgT2Dv0ws8VAT+BEqAXbCJCPwJHAEEuorAn0AAARGBO4H1CCFw7O+JoArIuQVGERH4EhgBBFQE/gQmF9ARnP4EljG5gB5Iiz+BGkBAreTqTyCAgIzAnUAogdMbwSIm0cQCeiAtvgR6MIEqInAkEEBARuBKIJzAwxOB5SsBb822n0dQxSoOJNBFBI4EAgmMp4jAkUAAATWQ6s8SaEFvz8vPIqhiWAYQcEQgEogqMD5FBBcS+BrBBPRAqtcTqIEF2vUIqsgmgIAjApFAaIF6NQKbwPcIKKAHUr2WQI8k4I+gilUcQMARgUggvEC/EkEzAM8E7wu2CxGsdhJFEvBH0MQqDiegV3J1JBBQ4NhFBDqBzyTvC4qIQCawjgwCOgKdQIstoFdydSQQRcD2rSNoVimRQPuPCFaLFF1AR7A5EggloK/BdAIZBPRVqE6ghxLwR7BaoBQCOgKdQDqBLiIQCSQSGJuIoNlJlEVAR3C8TKCkfHX7fLn+T5tASoFjf9X6YmlSCozyYvxVO4kSCegI1r8n0FIJ6IF0igQyCej9txiWZAI6gsfoViWxwPiy+2gzqzi1QLUR2ATSCeiBtBuSfAI6AjsWkguM738I9PQC3ZFADoGxKYC95xfQEZRxA4FRRALHLQSOXSSQXkBHsB75BXQEbWQV0APJruL8AmMVCaQW0BEsI5uAXsn21FsJVJFAZgH9juJmAsVOorsLlLsJIIAAAggggAACCCCAAAIIIIAAAggggAACCCCAAAIIIIAAAggggAACCCCAAAIIIIAAAggggAACCCCAAAIIIIAAAm3547QAAoGPFkAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBH6XAwc0AAAAAME2+ncWxOXNAI6Cs14i3Db7AAAAAElFTkSuQmCC" type="image/x-icon">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="shortcut icon"
+        href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQEAAAEBCAMAAABPMuDPAAAAQlBMVEXyZSLyZSLyZSLyZSLyZSL6roH91br2ilD+6tr4nGn0eDf7wp3+9e3zbyz3k1z0gUP7uI/5pXX+38n8y6z////yZSKuMvVfAAAABXRSTlOAQMBgICelMzEAAAOgSURBVHhe5MABDQAAAIIw3eifmSB8vA3Zt5vcuGEgCsLeUBSpnxnb4f2vmn068xK5Z8FuFQ8gCB9q80Dw42Pc+3y8UQABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQACBR7GnuAF6MafNKnDsv+xx/+1mv3nOKjDKXwRWbwIWYJl4F6wigvclUCcWaCKCeRKwAtNFoBN4TC1wigjelMA2+S5YRATv+VyfXKC+NYIqEphVQEfgT2Dv0ws8VAT+BEqAXbCJCPwJHAEEuorAn0AAARGBO4H1CCFw7O+JoArIuQVGERH4EhgBBFQE/gQmF9ARnP4EljG5gB5Iiz+BGkBAreTqTyCAgIzAnUAogdMbwSIm0cQCeiAtvgR6MIEqInAkEEBARuBKIJzAwxOB5SsBb822n0dQxSoOJNBFBI4EAgmMp4jAkUAAATWQ6s8SaEFvz8vPIqhiWAYQcEQgEogqMD5FBBcS+BrBBPRAqtcTqIEF2vUIqsgmgIAjApFAaIF6NQKbwPcIKKAHUr2WQI8k4I+gilUcQMARgUggvEC/EkEzAM8E7wu2CxGsdhJFEvBH0MQqDiegV3J1JBBQ4NhFBDqBzyTvC4qIQCawjgwCOgKdQIstoFdydSQQRcD2rSNoVimRQPuPCFaLFF1AR7A5EggloK/BdAIZBPRVqE6ghxLwR7BaoBQCOgKdQDqBLiIQCSQSGJuIoNlJlEVAR3C8TKCkfHX7fLn+T5tASoFjf9X6YmlSCozyYvxVO4kSCegI1r8n0FIJ6IF0igQyCej9txiWZAI6gsfoViWxwPiy+2gzqzi1QLUR2ATSCeiBtBuSfAI6AjsWkguM738I9PQC3ZFADoGxKYC95xfQEZRxA4FRRALHLQSOXSSQXkBHsB75BXQEbWQV0APJruL8AmMVCaQW0BEsI5uAXsn21FsJVJFAZgH9juJmAsVOorsLlLsJIIAAAggggAACCCCAAAIIIIAAAggggAACCCCAAAIIIIAAAggggAACCCCAAAIIIIAAAggggAACCCCAAAIIIIAAAm3547QAAoGPFkAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBH6XAwc0AAAAAME2+ncWxOXNAI6Cs14i3Db7AAAAAElFTkSuQmCC"
+        type="image/x-icon">
 
 
 
 </head>
+
 <body>
     <header>
         <nav>
             <div class="left-nav">
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQEAAAEBCAMAAABPMuDPAAAAQlBMVEXyZSLyZSLyZSLyZSLyZSL6roH91br2ilD+6tr4nGn0eDf7wp3+9e3zbyz3k1z0gUP7uI/5pXX+38n8y6z////yZSKuMvVfAAAABXRSTlOAQMBgICelMzEAAAOgSURBVHhe5MABDQAAAIIw3eifmSB8vA3Zt5vcuGEgCsLeUBSpnxnb4f2vmn068xK5Z8FuFQ8gCB9q80Dw42Pc+3y8UQABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQACBR7GnuAF6MafNKnDsv+xx/+1mv3nOKjDKXwRWbwIWYJl4F6wigvclUCcWaCKCeRKwAtNFoBN4TC1wigjelMA2+S5YRATv+VyfXKC+NYIqEphVQEfgT2Dv0ws8VAT+BEqAXbCJCPwJHAEEuorAn0AAARGBO4H1CCFw7O+JoArIuQVGERH4EhgBBFQE/gQmF9ARnP4EljG5gB5Iiz+BGkBAreTqTyCAgIzAnUAogdMbwSIm0cQCeiAtvgR6MIEqInAkEEBARuBKIJzAwxOB5SsBb822n0dQxSoOJNBFBI4EAgmMp4jAkUAAATWQ6s8SaEFvz8vPIqhiWAYQcEQgEogqMD5FBBcS+BrBBPRAqtcTqIEF2vUIqsgmgIAjApFAaIF6NQKbwPcIKKAHUr2WQI8k4I+gilUcQMARgUggvEC/EkEzAM8E7wu2CxGsdhJFEvBH0MQqDiegV3J1JBBQ4NhFBDqBzyTvC4qIQCawjgwCOgKdQIstoFdydSQQRcD2rSNoVimRQPuPCFaLFF1AR7A5EggloK/BdAIZBPRVqE6ghxLwR7BaoBQCOgKdQDqBLiIQCSQSGJuIoNlJlEVAR3C8TKCkfHX7fLn+T5tASoFjf9X6YmlSCozyYvxVO4kSCegI1r8n0FIJ6IF0igQyCej9txiWZAI6gsfoViWxwPiy+2gzqzi1QLUR2ATSCeiBtBuSfAI6AjsWkguM738I9PQC3ZFADoGxKYC95xfQEZRxA4FRRALHLQSOXSSQXkBHsB75BXQEbWQV0APJruL8AmMVCaQW0BEsI5uAXsn21FsJVJFAZgH9juJmAsVOorsLlLsJIIAAAggggAACCCCAAAIIIIAAAggggAACCCCAAAIIIIAAAggggAACCCCAAAIIIIAAAggggAACCCCAAAIIIIAAAm3547QAAoGPFkAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBH6XAwc0AAAAAME2+ncWxOXNAI6Cs14i3Db7AAAAAElFTkSuQmCC" class="h-full w-full" alt="Y Combinator" width="56" height="56">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQEAAAEBCAMAAABPMuDPAAAAQlBMVEXyZSLyZSLyZSLyZSLyZSL6roH91br2ilD+6tr4nGn0eDf7wp3+9e3zbyz3k1z0gUP7uI/5pXX+38n8y6z////yZSKuMvVfAAAABXRSTlOAQMBgICelMzEAAAOgSURBVHhe5MABDQAAAIIw3eifmSB8vA3Zt5vcuGEgCsLeUBSpnxnb4f2vmn068xK5Z8FuFQ8gCB9q80Dw42Pc+3y8UQABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQACBR7GnuAF6MafNKnDsv+xx/+1mv3nOKjDKXwRWbwIWYJl4F6wigvclUCcWaCKCeRKwAtNFoBN4TC1wigjelMA2+S5YRATv+VyfXKC+NYIqEphVQEfgT2Dv0ws8VAT+BEqAXbCJCPwJHAEEuorAn0AAARGBO4H1CCFw7O+JoArIuQVGERH4EhgBBFQE/gQmF9ARnP4EljG5gB5Iiz+BGkBAreTqTyCAgIzAnUAogdMbwSIm0cQCeiAtvgR6MIEqInAkEEBARuBKIJzAwxOB5SsBb822n0dQxSoOJNBFBI4EAgmMp4jAkUAAATWQ6s8SaEFvz8vPIqhiWAYQcEQgEogqMD5FBBcS+BrBBPRAqtcTqIEF2vUIqsgmgIAjApFAaIF6NQKbwPcIKKAHUr2WQI8k4I+gilUcQMARgUggvEC/EkEzAM8E7wu2CxGsdhJFEvBH0MQqDiegV3J1JBBQ4NhFBDqBzyTvC4qIQCawjgwCOgKdQIstoFdydSQQRcD2rSNoVimRQPuPCFaLFF1AR7A5EggloK/BdAIZBPRVqE6ghxLwR7BaoBQCOgKdQDqBLiIQCSQSGJuIoNlJlEVAR3C8TKCkfHX7fLn+T5tASoFjf9X6YmlSCozyYvxVO4kSCegI1r8n0FIJ6IF0igQyCej9txiWZAI6gsfoViWxwPiy+2gzqzi1QLUR2ATSCeiBtBuSfAI6AjsWkguM738I9PQC3ZFADoGxKYC95xfQEZRxA4FRRALHLQSOXSSQXkBHsB75BXQEbWQV0APJruL8AmMVCaQW0BEsI5uAXsn21FsJVJFAZgH9juJmAsVOorsLlLsJIIAAAggggAACCCCAAAIIIIAAAggggAACCCCAAAIIIIAAAggggAACCCCAAAIIIIAAAggggAACCCCAAAIIIIAAAm3547QAAoGPFkAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBH6XAwc0AAAAAME2+ncWxOXNAI6Cs14i3Db7AAAAAElFTkSuQmCC"
+                    class="h-full w-full" alt="Y Combinator" width="56" height="56">
 
                 <ul>
                     <li><a href="">About</a></li>
@@ -33,7 +39,10 @@
                 <a href="./apply/apply.html">Apply</a>
             </div>
 
-            <svg xmlns="http://www.w3.org/2000/svg" height="24px" class="menu" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" class="menu" viewBox="0 -960 960 960" width="24px"
+                fill="#5f6368">
+                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+            </svg>
         </nav>
     </header>
 
@@ -52,31 +61,34 @@
                         <p class="hero-p">
                             We give startups a <br>disproportionate advantage
                         </p>
-    
+
                         <a href="" class="hero-cta">Apply to YC</a>
                     </div>
                 </div>
-    
-                <div class="right-hero">
-                    <img src="./IMAGES/y combinator.webp" class="heroimage">
-                    <div class="middle-info">
-                        <div class="info-box">
-                            <h3 class="">
-                                5,000
-                            </h3>
-                            <p>
-                                funded startups
-                            </p>
-                        </div>
-                        <div class="info-box">
-                            <h3>
-                                $6000
-                            </h3>
-                            <p>
-                                combined valuation
-                            </p>
-                        </div>
+
+
+                <div class="middle-info">
+                    <div class="info-box">
+                        <h3 class="">
+                            5,000
+                        </h3>
+                        <p>
+                            funded startups
+                        </p>
                     </div>
+                    <div class="info-box">
+                        <h3>
+                            $6000
+                        </h3>
+                        <p>
+                            combined valuation
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="right-hero">
+                    <!-- <img src="./IMAGES/y combinator.webp" class="heroimage"> -->
                 </div>
             </div>
         </section>
@@ -87,7 +99,7 @@
                     <a href="">
                         <p><strong>YC Top Companies List by Revenue</strong></p>
                         <p>
-                            Congratulations to the Companies recognize on the innagural 
+                            Congratulations to the Companies recognize on the innagural
                             YC Top Companies List by Revenue!
                         </p>
                     </a>
@@ -96,125 +108,223 @@
                     <a href="">
                         <p><strong>YC Library</strong></p>
                         <p>
-                            Explore some of the best YC videos, podcast, and essays from over the years. come and learn how to make something people want.
+                            Explore some of the best YC videos, podcast, and essays from over the years. come and learn
+                            how to make something people want.
                         </p>
                     </a>
                 </div>
                 <div class="card">
                     <a href="">
                         <p><strong>The Standard Deal</strong></p>
-                    <p>
-                        When a company is accepted into the YC batch program, we invest a total of $500,000.
-                    </p>
+                        <p>
+                            When a company is accepted into the YC batch program, we invest a total of $500,000.
+                        </p>
                     </a>
                 </div>
-            </div> 
+            </div>
 
 
             <div class="grids-section">
-                <center><h1>Top YC companies</h1></center>
-                    
+                <center>
+                    <h1>Top YC companies</h1>
+                </center>
+
                 <div class="image-section">
-                   <div class="image">
-                        <a href="/companies/240" target="_blank" class="flex items-center justify-center rounded-lg bg-white px-3 py-4"><img src="https://bookface-static.ycombinator.com/assets/ycdc/startups/stripe-d1d72c19fe7fbfd9514ffbc26f1c5922a1b77fd7445c78a34fe319c03b986713.png" alt="Stripe logo" class="inline-block max-h-6 max-w-full"></a>
-                   </div>
                     <div class="image">
-                        <a href="/companies/271" target="_blank" class="flex items-center justify-center rounded-lg bg-white px-3 py-4"><img src="https://bookface-static.ycombinator.com/assets/ycdc/startups/airbnb-423deceb57ea913e2f3a39a1c2b6ecb690f019933b4d767ac91121777aa59107.png" alt="Airbnb logo" class="inline-block max-h-6 max-w-full"></a>
+                        <a href="/companies/240" target="_blank"
+                            class="flex items-center justify-center rounded-lg bg-white px-3 py-4"><img
+                                src="https://bookface-static.ycombinator.com/assets/ycdc/startups/stripe-d1d72c19fe7fbfd9514ffbc26f1c5922a1b77fd7445c78a34fe319c03b986713.png"
+                                alt="Stripe logo" class="inline-block max-h-6 max-w-full"></a>
                     </div>
                     <div class="image">
-                        <a href="/companies/468" target="_blank" class="flex items-center justify-center rounded-lg bg-white px-3 py-4"><img src="https://bookface-static.ycombinator.com/assets/ycdc/startups/instacart-81d147c59ca98d84b72f606de3af981da477423738120d3b2baec64c3162ba14.png" alt="Instacart logo" class="inline-block max-h-6 max-w-full"></a>
+                        <a href="/companies/271" target="_blank"
+                            class="flex items-center justify-center rounded-lg bg-white px-3 py-4"><img
+                                src="https://bookface-static.ycombinator.com/assets/ycdc/startups/airbnb-423deceb57ea913e2f3a39a1c2b6ecb690f019933b4d767ac91121777aa59107.png"
+                                alt="Airbnb logo" class="inline-block max-h-6 max-w-full"></a>
                     </div>
                     <div class="image">
-                        <a href="/companies/531" target="_blank" class="flex items-center justify-center rounded-lg bg-white px-3 py-4"><img src="https://bookface-static.ycombinator.com/assets/ycdc/startups/doordash-f41c839bb0522ead71e8d99ed3ae0495c04271f6f3f3edc6b0effbbff172bc1d.png" alt="DoorDash logo" class="inline-block max-h-6 max-w-full"></a>
+                        <a href="/companies/468" target="_blank"
+                            class="flex items-center justify-center rounded-lg bg-white px-3 py-4"><img
+                                src="https://bookface-static.ycombinator.com/assets/ycdc/startups/instacart-81d147c59ca98d84b72f606de3af981da477423738120d3b2baec64c3162ba14.png"
+                                alt="Instacart logo" class="inline-block max-h-6 max-w-full"></a>
                     </div>
                     <div class="image">
-                        <a href="/companies/590" target="_blank" class="flex items-center justify-center rounded-lg bg-white px-3 py-4"><img src="https://bookface-static.ycombinator.com/assets/ycdc/startups/cruise-38dda623d4f317a49a65099cd460bd1c6b3e4b91ffeccb6df0ec02284345b338.png" alt="Cruise logo" class="inline-block max-h-6 max-w-full"></a>
+                        <a href="/companies/531" target="_blank"
+                            class="flex items-center justify-center rounded-lg bg-white px-3 py-4"><img
+                                src="https://bookface-static.ycombinator.com/assets/ycdc/startups/doordash-f41c839bb0522ead71e8d99ed3ae0495c04271f6f3f3edc6b0effbbff172bc1d.png"
+                                alt="DoorDash logo" class="inline-block max-h-6 max-w-full"></a>
                     </div>
                     <div class="image">
-                        <a href="/companies/383" target="_blank" class="flex items-center justify-center rounded-lg bg-white px-3 py-4"><img src="https://bookface-static.ycombinator.com/assets/ycdc/startups/twitch-1b4772b83a73b6fa827ef467ecc17023a2bfbbf936633bffb5e93674690e74d6.png" alt="Twitch logo" class="inline-block max-h-6 max-w-full"></a>
+                        <a href="/companies/590" target="_blank"
+                            class="flex items-center justify-center rounded-lg bg-white px-3 py-4"><img
+                                src="https://bookface-static.ycombinator.com/assets/ycdc/startups/cruise-38dda623d4f317a49a65099cd460bd1c6b3e4b91ffeccb6df0ec02284345b338.png"
+                                alt="Cruise logo" class="inline-block max-h-6 max-w-full"></a>
                     </div>
                     <div class="image">
-                        <a href="/companies/439" target="_blank" class="flex items-center justify-center rounded-lg bg-white px-3 py-4"><img src="https://bookface-static.ycombinator.com/assets/ycdc/startups/coinbase-7d4f13e4f2ed0f6d3a608a7834517031d6663a0cbf1ba231d1dca2f079c091a2.png" alt="Coinbase logo" class="inline-block max-h-6 max-w-full"></a>
+                        <a href="/companies/383" target="_blank"
+                            class="flex items-center justify-center rounded-lg bg-white px-3 py-4"><img
+                                src="https://bookface-static.ycombinator.com/assets/ycdc/startups/twitch-1b4772b83a73b6fa827ef467ecc17023a2bfbbf936633bffb5e93674690e74d6.png"
+                                alt="Twitch logo" class="inline-block max-h-6 max-w-full"></a>
                     </div>
                     <div class="image">
-                        <a href="/companies/202" target="_blank" class="flex items-center justify-center rounded-lg bg-white px-3 py-4"><img src="https://bookface-static.ycombinator.com/assets/ycdc/startups/pagerduty-dc361aab31ef341eaed4d0a5a420c42f4d557745c67ffc5999c7b556c408d150.png" alt="PagerDuty logo" class="inline-block max-h-6 max-w-full"></a>
+                        <a href="/companies/439" target="_blank"
+                            class="flex items-center justify-center rounded-lg bg-white px-3 py-4"><img
+                                src="https://bookface-static.ycombinator.com/assets/ycdc/startups/coinbase-7d4f13e4f2ed0f6d3a608a7834517031d6663a0cbf1ba231d1dca2f079c091a2.png"
+                                alt="Coinbase logo" class="inline-block max-h-6 max-w-full"></a>
                     </div>
                     <div class="image">
-                        <a href="/companies/1543" target="_blank" class="flex items-center justify-center rounded-lg bg-white px-3 py-4"><img src="https://bookface-static.ycombinator.com/assets/ycdc/startups/faire-3113845be6506be7761eaef7257e882b6e0c94081653c0f7459f8ed0c0596338.png" alt="Faire logo" class="inline-block max-h-6 max-w-full"></a>
+                        <a href="/companies/202" target="_blank"
+                            class="flex items-center justify-center rounded-lg bg-white px-3 py-4"><img
+                                src="https://bookface-static.ycombinator.com/assets/ycdc/startups/pagerduty-dc361aab31ef341eaed4d0a5a420c42f4d557745c67ffc5999c7b556c408d150.png"
+                                alt="PagerDuty logo" class="inline-block max-h-6 max-w-full"></a>
                     </div>
                     <div class="image">
-                        <a href="/companies/1556" target="_blank" class="flex items-center justify-center rounded-lg bg-white px-3 py-4"><img src="https://bookface-static.ycombinator.com/assets/ycdc/startups/brex-a76f83603a430f266cddacaceaf525080d91c3febf04ea8000ae1b4c67e8786f.png" alt="Brex logo" class="inline-block max-h-6 max-w-full"></a>
+                        <a href="/companies/1543" target="_blank"
+                            class="flex items-center justify-center rounded-lg bg-white px-3 py-4"><img
+                                src="https://bookface-static.ycombinator.com/assets/ycdc/startups/faire-3113845be6506be7761eaef7257e882b6e0c94081653c0f7459f8ed0c0596338.png"
+                                alt="Faire logo" class="inline-block max-h-6 max-w-full"></a>
                     </div>
                     <div class="image">
-                        <a href="/companies/12064" target="_blank" class="flex items-center justify-center rounded-lg bg-white px-3 py-4"><img src="https://bookface-static.ycombinator.com/assets/ycdc/startups/deel-2eb5105300f66ebfa07b0ea805b6680d71c0b6de0272c3f75eebf6d2ae3077cf.png" alt="Deel logo" class="inline-block max-h-6 max-w-full"></a>
+                        <a href="/companies/1556" target="_blank"
+                            class="flex items-center justify-center rounded-lg bg-white px-3 py-4"><img
+                                src="https://bookface-static.ycombinator.com/assets/ycdc/startups/brex-a76f83603a430f266cddacaceaf525080d91c3febf04ea8000ae1b4c67e8786f.png"
+                                alt="Brex logo" class="inline-block max-h-6 max-w-full"></a>
                     </div>
                     <div class="image">
-                        <a href="/companies/1451" target="_blank" class="flex items-center justify-center rounded-lg bg-white px-3 py-4"><img src="https://bookface-static.ycombinator.com/assets/ycdc/startups/rippling-100bc0c1cdabd9e38c671420ba16ba8f6d1af656dc3bc32eeeaa029f1bec257a.png" alt="Rippling logo" class="inline-block max-h-6 max-w-full"></a>
+                        <a href="/companies/12064" target="_blank"
+                            class="flex items-center justify-center rounded-lg bg-white px-3 py-4"><img
+                                src="https://bookface-static.ycombinator.com/assets/ycdc/startups/deel-2eb5105300f66ebfa07b0ea805b6680d71c0b6de0272c3f75eebf6d2ae3077cf.png"
+                                alt="Deel logo" class="inline-block max-h-6 max-w-full"></a>
                     </div>
                     <div class="image">
-                        <a href="/companies/379" target="_blank" class="flex items-center justify-center rounded-lg bg-white px-3 py-4"><img src="https://bookface-static.ycombinator.com/assets/ycdc/startups/reddit-d5ed3340e70326e6a372be76e2ec1b761a4d757954ae69311671f82f59afbedb.png" alt="reddit logo" class="inline-block max-h-6 max-w-full"></a>
+                        <a href="/companies/1451" target="_blank"
+                            class="flex items-center justify-center rounded-lg bg-white px-3 py-4"><img
+                                src="https://bookface-static.ycombinator.com/assets/ycdc/startups/rippling-100bc0c1cdabd9e38c671420ba16ba8f6d1af656dc3bc32eeeaa029f1bec257a.png"
+                                alt="Rippling logo" class="inline-block max-h-6 max-w-full"></a>
                     </div>
                     <div class="image">
-                        <a href="/companies/24" target="_blank" class="flex items-center justify-center rounded-lg bg-white px-3 py-4"><img src="https://bookface-static.ycombinator.com/assets/ycdc/startups/gusto-b3f56f64a500a85cb44a2621db217778c9c698f83da59921e41c732dacdb3f35.png" alt="Gusto logo" class="inline-block max-h-6 max-w-full"></a>
+                        <a href="/companies/379" target="_blank"
+                            class="flex items-center justify-center rounded-lg bg-white px-3 py-4"><img
+                                src="https://bookface-static.ycombinator.com/assets/ycdc/startups/reddit-d5ed3340e70326e6a372be76e2ec1b761a4d757954ae69311671f82f59afbedb.png"
+                                alt="reddit logo" class="inline-block max-h-6 max-w-full"></a>
                     </div>
                     <div class="image">
-                        <a href="/companies/595" target="_blank" class="flex items-center justify-center rounded-lg bg-white px-3 py-4"><img src="https://bookface-static.ycombinator.com/assets/ycdc/startups/flexport-ace3180f9926a45ed72eea63ed4c5a1a0aeb4e14ec7eb3ffff7c513aba07d0a9.png" alt="Flexport logo" class="inline-block max-h-6 max-w-full"></a>
+                        <a href="/companies/24" target="_blank"
+                            class="flex items-center justify-center rounded-lg bg-white px-3 py-4"><img
+                                src="https://bookface-static.ycombinator.com/assets/ycdc/startups/gusto-b3f56f64a500a85cb44a2621db217778c9c698f83da59921e41c732dacdb3f35.png"
+                                alt="Gusto logo" class="inline-block max-h-6 max-w-full"></a>
                     </div>
                     <div class="image">
-                        <a href="/companies/325" target="_blank" class="flex items-center justify-center rounded-lg bg-white px-3 py-4"><img src="https://bookface-static.ycombinator.com/assets/ycdc/startups/dropbox-83b803aca663267bc2c480efca454ea8f9d31c39dd2ccba3856104a987e2692d.png" alt="Dropbox logo" class="inline-block max-h-6 max-w-full"></a>
+                        <a href="/companies/595" target="_blank"
+                            class="flex items-center justify-center rounded-lg bg-white px-3 py-4"><img
+                                src="https://bookface-static.ycombinator.com/assets/ycdc/startups/flexport-ace3180f9926a45ed72eea63ed4c5a1a0aeb4e14ec7eb3ffff7c513aba07d0a9.png"
+                                alt="Flexport logo" class="inline-block max-h-6 max-w-full"></a>
                     </div>
                     <div class="image">
-                        <a href="/companies/827" target="_blank" class="flex items-center justify-center rounded-lg bg-white px-3 py-4"><img src="https://bookface-static.ycombinator.com/assets/ycdc/startups/razorpay-7b4097215fa2d028e821d34bd3d1558309acd87ac5599e8164545e3a7fda5b95.png" alt="Razorpay logo" class="inline-block max-h-6 max-w-full"></a>
+                        <a href="/companies/325" target="_blank"
+                            class="flex items-center justify-center rounded-lg bg-white px-3 py-4"><img
+                                src="https://bookface-static.ycombinator.com/assets/ycdc/startups/dropbox-83b803aca663267bc2c480efca454ea8f9d31c39dd2ccba3856104a987e2692d.png"
+                                alt="Dropbox logo" class="inline-block max-h-6 max-w-full"></a>
                     </div>
                     <div class="image">
-                        <a href="/companies/1294" target="_blank" class="flex items-center justify-center rounded-lg bg-white px-3 py-4"><img src="https://bookface-static.ycombinator.com/assets/ycdc/startups/scale_ai-09562d62f19867f7e4af006fb0003148d1f0dff4ad32fa23e283c98a88044443.png" alt="Scale AI logo" class="inline-block max-h-6 max-w-full"></a>
+                        <a href="/companies/827" target="_blank"
+                            class="flex items-center justify-center rounded-lg bg-white px-3 py-4"><img
+                                src="https://bookface-static.ycombinator.com/assets/ycdc/startups/razorpay-7b4097215fa2d028e821d34bd3d1558309acd87ac5599e8164545e3a7fda5b95.png"
+                                alt="Razorpay logo" class="inline-block max-h-6 max-w-full"></a>
                     </div>
                     <div class="image">
-                        <a href="/companies/810" target="_blank" class="flex items-center justify-center rounded-lg bg-white px-3 py-4"><img src="https://bookface-static.ycombinator.com/assets/ycdc/startups/gitlab-9998d8cb37a75de7004d679606bb8c5517d8c82848fb3e6ff13f8587143545b3.png" alt="GitLab logo" class="inline-block max-h-6 max-w-full"></a>
+                        <a href="/companies/1294" target="_blank"
+                            class="flex items-center justify-center rounded-lg bg-white px-3 py-4"><img
+                                src="https://bookface-static.ycombinator.com/assets/ycdc/startups/scale_ai-09562d62f19867f7e4af006fb0003148d1f0dff4ad32fa23e283c98a88044443.png"
+                                alt="Scale AI logo" class="inline-block max-h-6 max-w-full"></a>
                     </div>
                     <div class="image">
-                        <a href="/companies/445" target="_blank" class="flex items-center justify-center rounded-lg bg-white px-3 py-4"><img src="https://bookface-static.ycombinator.com/assets/ycdc/startups/benchling-cabc6ab6f92c92af620210d56c5cb872d5a2b77d3244924a4b35c0fba03aa411.png" alt="Benchling logo" class="inline-block max-h-6 max-w-full"></a>
+                        <a href="/companies/810" target="_blank"
+                            class="flex items-center justify-center rounded-lg bg-white px-3 py-4"><img
+                                src="https://bookface-static.ycombinator.com/assets/ycdc/startups/gitlab-9998d8cb37a75de7004d679606bb8c5517d8c82848fb3e6ff13f8587143545b3.png"
+                                alt="GitLab logo" class="inline-block max-h-6 max-w-full"></a>
                     </div>
                     <div class="image">
-                        <a href="/companies/482" target="_blank" class="flex items-center justify-center rounded-lg bg-white px-3 py-4"><img src="https://bookface-static.ycombinator.com/assets/ycdc/startups/fivetran-80f044801357e31b679f1c6adb33cd674b80a6fba2eef509dcb930f57118d324.png" alt="Fivetran logo" class="inline-block max-h-6 max-w-full"></a>
+                        <a href="/companies/445" target="_blank"
+                            class="flex items-center justify-center rounded-lg bg-white px-3 py-4"><img
+                                src="https://bookface-static.ycombinator.com/assets/ycdc/startups/benchling-cabc6ab6f92c92af620210d56c5cb872d5a2b77d3244924a4b35c0fba03aa411.png"
+                                alt="Benchling logo" class="inline-block max-h-6 max-w-full"></a>
                     </div>
                     <div class="image">
-                        <a href="/companies/1103" target="_blank" class="flex items-center justify-center rounded-lg bg-white px-3 py-4"><img src="https://bookface-static.ycombinator.com/assets/ycdc/startups/rappi-58eceb42cb4e6ba589842600cba0a0448e2ebe42a8ad4d0b9e26f1e6ccd9f36d.png" alt="Rappi logo" class="inline-block max-h-6 max-w-full"></a>
+                        <a href="/companies/482" target="_blank"
+                            class="flex items-center justify-center rounded-lg bg-white px-3 py-4"><img
+                                src="https://bookface-static.ycombinator.com/assets/ycdc/startups/fivetran-80f044801357e31b679f1c6adb33cd674b80a6fba2eef509dcb930f57118d324.png"
+                                alt="Fivetran logo" class="inline-block max-h-6 max-w-full"></a>
                     </div>
                     <div class="image">
-                        <a href="/companies/662" target="_blank" class="flex items-center justify-center rounded-lg bg-white px-3 py-4"><img src="https://bookface-static.ycombinator.com/assets/ycdc/startups/checkr-dfe048bab6c8869e0faa186c947e1f8ba70fe25468952d432d6730bc7c64b557.png" alt="Checkr logo" class="inline-block max-h-6 max-w-full"></a>
+                        <a href="/companies/1103" target="_blank"
+                            class="flex items-center justify-center rounded-lg bg-white px-3 py-4"><img
+                                src="https://bookface-static.ycombinator.com/assets/ycdc/startups/rappi-58eceb42cb4e6ba589842600cba0a0448e2ebe42a8ad4d0b9e26f1e6ccd9f36d.png"
+                                alt="Rappi logo" class="inline-block max-h-6 max-w-full"></a>
                     </div>
                     <div class="image">
-                        <a href="/companies/442" target="_blank" class="flex items-center justify-center rounded-lg bg-white px-3 py-4"><img src="https://bookface-static.ycombinator.com/assets/ycdc/startups/zapier-a571989e13599601b2555b75551ee1cee4161f77df939d8f9d99ef750d6c9851.png" alt="Zapier logo" class="inline-block max-h-6 max-w-full"></a>
+                        <a href="/companies/662" target="_blank"
+                            class="flex items-center justify-center rounded-lg bg-white px-3 py-4"><img
+                                src="https://bookface-static.ycombinator.com/assets/ycdc/startups/checkr-dfe048bab6c8869e0faa186c947e1f8ba70fe25468952d432d6730bc7c64b557.png"
+                                alt="Checkr logo" class="inline-block max-h-6 max-w-full"></a>
                     </div>
                     <div class="image">
-                        <a href="/companies/13208" target="_blank" class="flex items-center justify-center rounded-lg bg-white px-3 py-4"><img src="https://bookface-static.ycombinator.com/assets/ycdc/startups/whatnot-44d4dfd2add836c788c42baa567fa4769b88f6e4da07d8f8eaf79d321b9be41c.png" alt="Whatnot logo" class="inline-block max-h-6 max-w-full"></a>
+                        <a href="/companies/442" target="_blank"
+                            class="flex items-center justify-center rounded-lg bg-white px-3 py-4"><img
+                                src="https://bookface-static.ycombinator.com/assets/ycdc/startups/zapier-a571989e13599601b2555b75551ee1cee4161f77df939d8f9d99ef750d6c9851.png"
+                                alt="Zapier logo" class="inline-block max-h-6 max-w-full"></a>
                     </div>
                     <div class="image">
-                        <a href="/companies/1042" target="_blank" class="flex items-center justify-center rounded-lg bg-white px-3 py-4"><img src="https://bookface-static.ycombinator.com/assets/ycdc/startups/podium-403d2cf6edcf8bd760845e1a356161d69df559a59aeda2e36bf90b0454d75c85.png" alt="Podium logo" class="inline-block max-h-6 max-w-full"></a>
+                        <a href="/companies/13208" target="_blank"
+                            class="flex items-center justify-center rounded-lg bg-white px-3 py-4"><img
+                                src="https://bookface-static.ycombinator.com/assets/ycdc/startups/whatnot-44d4dfd2add836c788c42baa567fa4769b88f6e4da07d8f8eaf79d321b9be41c.png"
+                                alt="Whatnot logo" class="inline-block max-h-6 max-w-full"></a>
                     </div>
                     <div class="image">
-                        <a href="/companies/566" target="_blank" class="flex items-center justify-center rounded-lg bg-white px-3 py-4"><img src="https://bookface-static.ycombinator.com/assets/ycdc/startups/webflow-e0f324025f848a85519e046dfcffa3c517ad4470106e8ee54f697df16be929ce.png" alt="Webflow logo" class="inline-block max-h-6 max-w-full"></a>
+                        <a href="/companies/1042" target="_blank"
+                            class="flex items-center justify-center rounded-lg bg-white px-3 py-4"><img
+                                src="https://bookface-static.ycombinator.com/assets/ycdc/startups/podium-403d2cf6edcf8bd760845e1a356161d69df559a59aeda2e36bf90b0454d75c85.png"
+                                alt="Podium logo" class="inline-block max-h-6 max-w-full"></a>
                     </div>
                     <div class="image">
-                        <a href="/companies/22721" target="_blank" class="flex items-center justify-center rounded-lg bg-white px-3 py-4"><img src="https://bookface-static.ycombinator.com/assets/ycdc/startups/zepto-ed94889c5a2c2128ca2a39d5ce829a68cc792ed3e1b479089d2cbd3e03fa6483.png" alt="Zepto logo" class="inline-block max-h-6 max-w-full"></a>
+                        <a href="/companies/566" target="_blank"
+                            class="flex items-center justify-center rounded-lg bg-white px-3 py-4"><img
+                                src="https://bookface-static.ycombinator.com/assets/ycdc/startups/webflow-e0f324025f848a85519e046dfcffa3c517ad4470106e8ee54f697df16be929ce.png"
+                                alt="Webflow logo" class="inline-block max-h-6 max-w-full"></a>
                     </div>
                     <div class="image">
-                        <a href="/companies/1839" target="_blank" class="flex items-center justify-center rounded-lg bg-white px-3 py-4"><img src="https://bookface-static.ycombinator.com/assets/ycdc/startups/groww-b94b5a87bc987c7fa70ef04790d93b54fdca1d9edcf3d4d104865d740542fd4f.png" alt="Groww logo" class="inline-block max-h-6 max-w-full"></a>
+                        <a href="/companies/22721" target="_blank"
+                            class="flex items-center justify-center rounded-lg bg-white px-3 py-4"><img
+                                src="https://bookface-static.ycombinator.com/assets/ycdc/startups/zepto-ed94889c5a2c2128ca2a39d5ce829a68cc792ed3e1b479089d2cbd3e03fa6483.png"
+                                alt="Zepto logo" class="inline-block max-h-6 max-w-full"></a>
                     </div>
                     <div class="image">
-                        <a href="/companies/88" target="_blank" class="flex items-center justify-center rounded-lg bg-white px-3 py-4"><img src="https://bookface-static.ycombinator.com/assets/ycdc/startups/segment-bc64ab58b63ec0bdb1aa5888ca7771acabc39db12e9c30b4a5215014b766ffc4.png" alt="Segment logo" class="inline-block max-h-6 max-w-full"></a>
+                        <a href="/companies/1839" target="_blank"
+                            class="flex items-center justify-center rounded-lg bg-white px-3 py-4"><img
+                                src="https://bookface-static.ycombinator.com/assets/ycdc/startups/groww-b94b5a87bc987c7fa70ef04790d93b54fdca1d9edcf3d4d104865d740542fd4f.png"
+                                alt="Groww logo" class="inline-block max-h-6 max-w-full"></a>
                     </div>
                     <div class="image">
-                        <a href="/companies/866" target="_blank" class="flex items-center justify-center rounded-lg bg-white px-3 py-4"><img src="https://bookface-static.ycombinator.com/assets/ycdc/startups/ironclad-7ea21638879d20154e44f1614042b2fc93babefe9059a42835874975f73106d1.png" alt="Ironclad logo" class="inline-block max-h-6 max-w-full"></a>
+                        <a href="/companies/88" target="_blank"
+                            class="flex items-center justify-center rounded-lg bg-white px-3 py-4"><img
+                                src="https://bookface-static.ycombinator.com/assets/ycdc/startups/segment-bc64ab58b63ec0bdb1aa5888ca7771acabc39db12e9c30b4a5215014b766ffc4.png"
+                                alt="Segment logo" class="inline-block max-h-6 max-w-full"></a>
                     </div>
                     <div class="image">
-                        <a href="/topcompanies" target="_blank" class="flex items-center justify-center rounded-lg bg-white px-3 font-bold"><span style="line-height:1.5rem;font-size: 30px;" class="mr-0.5 max-h-6 text-2xl">+</span></a>
+                        <a href="/companies/866" target="_blank"
+                            class="flex items-center justify-center rounded-lg bg-white px-3 py-4"><img
+                                src="https://bookface-static.ycombinator.com/assets/ycdc/startups/ironclad-7ea21638879d20154e44f1614042b2fc93babefe9059a42835874975f73106d1.png"
+                                alt="Ironclad logo" class="inline-block max-h-6 max-w-full"></a>
                     </div>
-                        
+                    <div class="image">
+                        <a href="/topcompanies" target="_blank"
+                            class="flex items-center justify-center rounded-lg bg-white px-3 font-bold"><span
+                                style="line-height:1.5rem;font-size: 30px;" class="mr-0.5 max-h-6 text-2xl">+</span></a>
+                    </div>
+
                 </div>
             </div>
-        </section> 
+        </section>
 
         <section class="third">
             <h2>
@@ -235,7 +345,8 @@
                         </li>
                         <li>
                             <span>52%</span>
-                            of YC's billion dollar company founders were under 28 years old and the oldest founder was in their 50s
+                            of YC's billion dollar company founders were under 28 years old and the oldest founder was
+                            in their 50s
                         </li>
                         <li>
                             <span>42%</span>
@@ -248,7 +359,7 @@
                     <p>
                         We improve the success rate of our startups.
                     </p>
-                    
+
                     <ul>
                         <li>
                             <span>39%</span>
@@ -325,8 +436,11 @@
                     Our formula for
                     <span>success</span>.
                 </h3>
-                
-                <iframe width="672" height="378" src="https://www.youtube.com/embed/EiRnSjcVIqk" title="Inside The Most Powerful Startup Community In The World" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <iframe width="50%" height="378" src="https://www.youtube.com/embed/EiRnSjcVIqk"
+                    title="Inside The Most Powerful Startup Community In The World" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </section>
 
@@ -343,41 +457,57 @@
                     <div class="fiftwo">
                         <img src="./IMAGES/y-combo 1.jpg" width="400px" height="200px" alt="">
                         <div>The most experienced partners</div>
-                        <p>Each founder is assigned a dedicated group partner who has mentored hundreds of YC companies. They have more data on what it takes to build a successful startup than any other early stage startup advisor. These group partners read applications, interview companies, and mentor startups throughout the batch. You can access them in person, over email, and on Slack.</p>
+                        <p>Each founder is assigned a dedicated group partner who has mentored hundreds of YC companies.
+                            They have more data on what it takes to build a successful startup than any other early
+                            stage startup advisor. These group partners read applications, interview companies, and
+                            mentor startups throughout the batch. You can access them in person, over email, and on
+                            Slack.</p>
                     </div>
 
                     <div class="fiftwo">
                         <img src="./IMAGES/y-combo 2.jpg" width="400px" height="200px" alt="">
                         <div>Investor network</div>
-                        <p>YC companies have raised $85 billion dollars from the best investors in the world. Our founders have access to the YC Investor Database which has profiles and reviews for more than 50,000 startup investors.</p>
+                        <p>YC companies have raised $85 billion dollars from the best investors in the world. Our
+                            founders have access to the YC Investor Database which has profiles and reviews for more
+                            than 50,000 startup investors.</p>
                     </div>
 
                     <div class="fiftwo">
                         <img src="./IMAGES/y-combo 3.jpg" width="400px" height="200px" alt="">
                         <div>Private social network only for founders</div>
-                        <p>YC founders get to benefit from the collective wisdom of over 9000 YC alumni. They can access these alums through Bookface, our private social network. We have a forum for asking questions to the community, a founder directory for finding specific people who can provide advice and intros, and a company directory for finding potential customers.</p>
+                        <p>YC founders get to benefit from the collective wisdom of over 9000 YC alumni. They can access
+                            these alums through Bookface, our private social network. We have a forum for asking
+                            questions to the community, a founder directory for finding specific people who can provide
+                            advice and intros, and a company directory for finding potential customers.</p>
                     </div>
 
                     <div class="fiftwo">
                         <img src="./IMAGES/y-combo 4.jpg" width="400px" height="200px" alt="">
                         <div>Exclusive deals</div>
-                        <p>YC founders have access to over 1000 deals from leading software companies. Every YC company gets free credits or significant discounts on hosting, banking, cap table management, back office, and much more. Companies report these deals to be worth in excess of $500,000.</p>
+                        <p>YC founders have access to over 1000 deals from leading software companies. Every YC company
+                            gets free credits or significant discounts on hosting, banking, cap table management, back
+                            office, and much more. Companies report these deals to be worth in excess of $500,000.</p>
                     </div>
 
                     <div class="fiftwo">
                         <img src="./IMAGES/y-combo 5.jpg" width="400px" height="200px" alt="">
                         <div>The best written advice</div>
-                        <p>YC founders get to benefit from our collective experience funding 5000 companies across almost 20 years. We have extensive documentation for common questions about fundraising, go to market, sales, product market fit, mental health, hiring, and much more.</p>
+                        <p>YC founders get to benefit from our collective experience funding 5000 companies across
+                            almost 20 years. We have extensive documentation for common questions about fundraising, go
+                            to market, sales, product market fit, mental health, hiring, and much more.</p>
                     </div>
 
                     <div class="fiftwo">
                         <img src="./IMAGES/y-combo 6.jpg" width="400px" height="200px" alt="">
                         <div>Networks to build your team</div>
-                        <p>Through <a href="">Work at a Startup</a> and <a href="">HN</a>, we help our founders hire the small number of early engineers and other team members critical to finding product market fit. At any given time there are 150,000+ candidates searching for jobs at early stage YC companies.</p>
+                        <p>Through <a href="">Work at a Startup</a> and <a href="">HN</a>, we help our founders hire the
+                            small number of early engineers and other team members critical to finding product market
+                            fit. At any given time there are 150,000+ candidates searching for jobs at early stage YC
+                            companies.</p>
                     </div>
                 </div>
             </div>
-        </section> 
+        </section>
 
         <section class="sixth">
             <div class="sixthbody">
@@ -419,13 +549,16 @@
                     </p>
                 </div>
                 <div class="img-seven">
-                    <iframe width="672" height="378" src="https://www.youtube.com/embed/DOez-RwJ7mg" title="The Truth About Y Combinator" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe width="672" height="378" src="https://www.youtube.com/embed/DOez-RwJ7mg"
+                        title="The Truth About Y Combinator" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
                 <div class="seventwo">
                     <p><span>Learn more</span> about evaluating equity</p>
                 </div>
             </div>
-            
+
         </section>
     </main>
 
@@ -433,8 +566,9 @@
     <footer>
         <div class="footerbody">
             <div class="footerone">
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQEAAAEBCAMAAABPMuDPAAAAQlBMVEXyZSLyZSLyZSLyZSLyZSL6roH91br2ilD+6tr4nGn0eDf7wp3+9e3zbyz3k1z0gUP7uI/5pXX+38n8y6z////yZSKuMvVfAAAABXRSTlOAQMBgICelMzEAAAOgSURBVHhe5MABDQAAAIIw3eifmSB8vA3Zt5vcuGEgCsLeUBSpnxnb4f2vmn068xK5Z8FuFQ8gCB9q80Dw42Pc+3y8UQABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQACBR7GnuAF6MafNKnDsv+xx/+1mv3nOKjDKXwRWbwIWYJl4F6wigvclUCcWaCKCeRKwAtNFoBN4TC1wigjelMA2+S5YRATv+VyfXKC+NYIqEphVQEfgT2Dv0ws8VAT+BEqAXbCJCPwJHAEEuorAn0AAARGBO4H1CCFw7O+JoArIuQVGERH4EhgBBFQE/gQmF9ARnP4EljG5gB5Iiz+BGkBAreTqTyCAgIzAnUAogdMbwSIm0cQCeiAtvgR6MIEqInAkEEBARuBKIJzAwxOB5SsBb822n0dQxSoOJNBFBI4EAgmMp4jAkUAAATWQ6s8SaEFvz8vPIqhiWAYQcEQgEogqMD5FBBcS+BrBBPRAqtcTqIEF2vUIqsgmgIAjApFAaIF6NQKbwPcIKKAHUr2WQI8k4I+gilUcQMARgUggvEC/EkEzAM8E7wu2CxGsdhJFEvBH0MQqDiegV3J1JBBQ4NhFBDqBzyTvC4qIQCawjgwCOgKdQIstoFdydSQQRcD2rSNoVimRQPuPCFaLFF1AR7A5EggloK/BdAIZBPRVqE6ghxLwR7BaoBQCOgKdQDqBLiIQCSQSGJuIoNlJlEVAR3C8TKCkfHX7fLn+T5tASoFjf9X6YmlSCozyYvxVO4kSCegI1r8n0FIJ6IF0igQyCej9txiWZAI6gsfoViWxwPiy+2gzqzi1QLUR2ATSCeiBtBuSfAI6AjsWkguM738I9PQC3ZFADoGxKYC95xfQEZRxA4FRRALHLQSOXSSQXkBHsB75BXQEbWQV0APJruL8AmMVCaQW0BEsI5uAXsn21FsJVJFAZgH9juJmAsVOorsLlLsJIIAAAggggAACCCCAAAIIIIAAAggggAACCCCAAAIIIIAAAggggAACCCCAAAIIIIAAAggggAACCCCAAAIIIIAAAm3547QAAoGPFkAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBH6XAwc0AAAAAME2+ncWxOXNAI6Cs14i3Db7AAAAAElFTkSuQmCC" class="h-full w-full" alt="Y Combinator" width="60" height="60">
-            
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQEAAAEBCAMAAABPMuDPAAAAQlBMVEXyZSLyZSLyZSLyZSLyZSL6roH91br2ilD+6tr4nGn0eDf7wp3+9e3zbyz3k1z0gUP7uI/5pXX+38n8y6z////yZSKuMvVfAAAABXRSTlOAQMBgICelMzEAAAOgSURBVHhe5MABDQAAAIIw3eifmSB8vA3Zt5vcuGEgCsLeUBSpnxnb4f2vmn068xK5Z8FuFQ8gCB9q80Dw42Pc+3y8UQABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQACBR7GnuAF6MafNKnDsv+xx/+1mv3nOKjDKXwRWbwIWYJl4F6wigvclUCcWaCKCeRKwAtNFoBN4TC1wigjelMA2+S5YRATv+VyfXKC+NYIqEphVQEfgT2Dv0ws8VAT+BEqAXbCJCPwJHAEEuorAn0AAARGBO4H1CCFw7O+JoArIuQVGERH4EhgBBFQE/gQmF9ARnP4EljG5gB5Iiz+BGkBAreTqTyCAgIzAnUAogdMbwSIm0cQCeiAtvgR6MIEqInAkEEBARuBKIJzAwxOB5SsBb822n0dQxSoOJNBFBI4EAgmMp4jAkUAAATWQ6s8SaEFvz8vPIqhiWAYQcEQgEogqMD5FBBcS+BrBBPRAqtcTqIEF2vUIqsgmgIAjApFAaIF6NQKbwPcIKKAHUr2WQI8k4I+gilUcQMARgUggvEC/EkEzAM8E7wu2CxGsdhJFEvBH0MQqDiegV3J1JBBQ4NhFBDqBzyTvC4qIQCawjgwCOgKdQIstoFdydSQQRcD2rSNoVimRQPuPCFaLFF1AR7A5EggloK/BdAIZBPRVqE6ghxLwR7BaoBQCOgKdQDqBLiIQCSQSGJuIoNlJlEVAR3C8TKCkfHX7fLn+T5tASoFjf9X6YmlSCozyYvxVO4kSCegI1r8n0FIJ6IF0igQyCej9txiWZAI6gsfoViWxwPiy+2gzqzi1QLUR2ATSCeiBtBuSfAI6AjsWkguM738I9PQC3ZFADoGxKYC95xfQEZRxA4FRRALHLQSOXSSQXkBHsB75BXQEbWQV0APJruL8AmMVCaQW0BEsI5uAXsn21FsJVJFAZgH9juJmAsVOorsLlLsJIIAAAggggAACCCCAAAIIIIAAAggggAACCCCAAAIIIIAAAggggAACCCCAAAIIIIAAAggggAACCCCAAAIIIIAAAm3547QAAoGPFkAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBH6XAwc0AAAAAME2+ncWxOXNAI6Cs14i3Db7AAAAAElFTkSuQmCC"
+                    class="h-full w-full" alt="Y Combinator" width="60" height="60">
+
                 <div class="footerul">
                     <div>
                         <h3>
@@ -500,9 +634,10 @@
                     <a href=""></a>
                 </div>
             </div>
-       </div>
+        </div>
     </footer>
 
-    
+
 </body>
+
 </html>

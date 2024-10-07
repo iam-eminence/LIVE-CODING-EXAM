@@ -1,24 +1,26 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-header{
+
+header {
     /* border: solid; */
-    background: whitesmoke ;
+    background: whitesmoke;
 }
-nav{
+
+nav {
     display: flex;
     /* border: solid yellow; */
     justify-content: space-between;
     align-items: center;
     width: 70em;
-    background: whitesmoke ;
+    background: whitesmoke;
     padding: 10px 10px;
     margin: auto;
 }
 
-.left-nav{
+.left-nav {
     /* border: solid red; */
     display: flex;
     align-items: center;
@@ -26,35 +28,38 @@ nav{
     gap: 1em;
 }
 
-.left-nav ul{
+.left-nav ul {
     display: flex;
     gap: 1em;
 }
 
-.left-nav ul li{
+.left-nav ul li {
     list-style: none;
 }
-.left-nav ul li a{
+
+.left-nav ul li a {
     text-decoration: none;
     color: #222222;
     font-size: 15px;
     font-family: sans-serif;
     font-weight: 500;
 }
-.right-nav{
+
+.right-nav {
     display: flex;
     align-items: center;
     /* border: solid green; */
     gap: 1em;
     padding: 10px 20px;
 }
-.right-nav span{
+
+.right-nav span {
     font-size: 16px;
     font-family: sans-serif;
     font-weight: 500px;
 }
 
-.right-nav a{
+.right-nav a {
     padding: 10px 10px;
     text-decoration: none;
     color: white;
@@ -64,25 +69,29 @@ nav{
     font-weight: 600;
     border-radius: 7px;
 }
-.menu{
+
+.menu {
     display: none;
 }
 
 /* --------HERO SECTION----- */
 
-.first{
+.first {
     position: relative;
     /* border: solid yellow; */
     /* height:79vh; */
 }
-.hero-section{
+
+.hero-section {
     width: 100%;
     background-color: white;
     display: flex;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 500px;
+    /* border: 3px solid black; */
 }
 
-.left-hero{
+.left-hero {
     width: 50%;
     display: flex;
     align-items: center;
@@ -90,26 +99,31 @@ nav{
     overflow: hidden;
 }
 
-.lefthbox{
+.lefthbox {
     width: 80%;
     padding: 40px;
-    line-height: 5em;;   
+    line-height: 5em;
+    ;
     overflow: hidden;
 }
-.hf{
+
+.hf {
     color: black;
     font-size: 3.5em;
 }
-.hs{
+
+.hs {
     color: #fb651e;
     font-size: 3.5em;
 }
-.hero-p{
+
+.hero-p {
     color: black;
     font-size: 1.5em;
     line-height: 1.4em;
 }
-.hero-cta{
+
+.hero-cta {
     text-decoration: none;
     color: white;
     background-color: orange;
@@ -118,21 +132,26 @@ nav{
     font-size: 20px;
     border-radius: 10px;
 }
-.hero-cta:hover{
+
+.hero-cta:hover {
     background-color: #fb651e;
 }
-.middle-info{
+
+.middle-info {
     position: absolute;
     z-index: 500;
     height: 70%;
     width: 220px;
-    bottom: 15%;
-    right: 83%;
+    left: 40%;
+    top: 20%;
     justify-content: space-around;
     display: flex;
     flex-direction: column;
 }
-.info-box{
+
+
+
+.info-box {
     width: 100%;
     background-color: rgb(233, 230, 230);
     border-radius: 20px;
@@ -141,28 +160,39 @@ nav{
     flex-direction: column;
     align-items: center;
 }
-.info-box h3{
+
+.info-box h3 {
     color: #fb651e;
     font-size: 2em;
 }
-.right-hero{
+
+
+
+.right-hero {
     width: 50%;
     position: relative;
     right: 0;
+    height: 100%;
+    background-image: url(./IMAGES/y\ combinator.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
-.heroimage{
+
+.heroimage {
     width: 100%;
 }
 
 
 
 /* --------CARDS SECTION------ */
-.second{
+.second {
     /* border: solid red; */
     /* margin-top: 5em; */
     background: #F5F5EE;
 }
-.cards-body{
+
+.cards-body {
     /* border: solid blue; */
     margin-top: 5em;
     display: flex;
@@ -171,7 +201,8 @@ nav{
     justify-content: space-between;
     margin: auto;
 }
-.card{
+
+.card {
     /* border: solid yellow; */
     width: 33%;
     padding: 20px;
@@ -179,17 +210,20 @@ nav{
     background: #FFF;
     border-radius: 10px;
 }
-.card a{
+
+.card a {
     text-decoration: none;
 }
-.card p{
+
+.card p {
     font-size: 16px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #222222;
     line-height: 1.5em;
     display: flex;
 }
-.card a p strong{
+
+.card a p strong {
     margin-bottom: 0.4em;
     color: blue;
     font-size: 18px;
@@ -198,7 +232,7 @@ nav{
 
 /* --------GRIDS SECTION-------- */
 
-.image-section{
+.image-section {
     /* border: solid red; */
     display: grid;
     grid-template-columns: repeat(8, 1fr);
@@ -207,7 +241,8 @@ nav{
     margin: auto;
     width: 85%;
 }
-.image{
+
+.image {
     width: 100%;
     height: 60px;
     display: flex;
@@ -217,17 +252,20 @@ nav{
     padding: 10px;
     border-radius: 10px;
 }
-center{
+
+center {
     /* border: solid blue; */
     margin: 50px 0px;
     font-size: 20px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-.image img{
+
+.image img {
     /* border: solid yellow; */
     width: 90px;
 }
-.image a{
+
+.image a {
     text-decoration: none;
     color: black;
     font-weight: 600;
@@ -235,13 +273,14 @@ center{
 
 /* ---------THIRD SECTION----- */
 
-.third{
+.third {
     /* border: solid red; */
     padding: 0px 13px;
-    margin:0px 13px ;
+    margin: 0px 13px;
     margin-top: 5em;
 }
-.third-body{
+
+.third-body {
     /* border: solid blue; */
     width: 80%;
     margin: auto;
@@ -249,7 +288,8 @@ center{
     gap: 40px;
     justify-content: space-between;
 }
-.third-body p{
+
+.third-body p {
     color: #222;
     /* border: solid yellow; */
     width: 78%;
@@ -258,40 +298,46 @@ center{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     border-left: 5px solid orangered;
 }
-.third-body ul{
+
+.third-body ul {
     /* border: solid yellow; */
     margin: 0px 0px 0px 20px;
 }
-.thirdone{
+
+.thirdone {
     /* border: solid red; */
     width: 30%;
 }
-.third-body ul li{
+
+.third-body ul li {
     margin: 20px 0px 0px 0px;
     color: #222;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-.third-body ul li span{
+
+.third-body ul li span {
     color: blue;
 }
-.third h2{
+
+.third h2 {
     /* border: solid red; */
     width: 43%;
     font-size: 30px;
     margin: auto;
     line-height: 1.5em;
     margin-bottom: 2em;
-    font-family:sans-serif;
+    font-family: sans-serif;
     color: #222;
     text-align: center;
 }
-.third h2 span{
+
+.third h2 span {
     color: orangered;
 }
 
 /* -------FOURTH SECTION---- */
 
-.fourthbody{
+.fourthbody {
     /* border: solid red; */
     background: whitesmoke;
     margin-top: 4em;
@@ -302,27 +348,29 @@ center{
     align-items: center;
 }
 
-.fourthbody h3{
+.fourthbody h3 {
     font-size: 30px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin-bottom: 1.5em;
 }
 
-.fourthbody h3 span{
+.fourthbody h3 span {
     color: orangered;
 }
 
 /* -------FIFTH SECTION------ */
 
-.fifth{
+.fifth {
     /* border: solid red; */
     background: #FFF;
 }
-.fifthbody{
+
+.fifthbody {
     /* border: solid green; */
     margin: 40px 0px 0px;
 }
-.fifthtwo{
+
+.fifthtwo {
     /* border: solid yellow; */
     display: grid;
     margin: auto;
@@ -331,32 +379,35 @@ center{
     gap: 2em;
     grid-template-columns: repeat(2, 1fr);
 }
-.fiftwo{
+
+.fiftwo {
     /* border: solid red; */
     align-items: center;
     background: #F5F5EE;
     border-radius: 10px;
     padding: 40px;
 }
-.fifthtwo .fiftwo div{
+
+.fifthtwo .fiftwo div {
     border-left: solid orangered;
     font-size: 16px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0px 0px 12px;
     padding: 0px 0px 0px 4px;
 }
-.fifthtwo .fiftwo p{
+
+.fifthtwo .fiftwo p {
     /* border: solid red; */
     font: 16px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     line-height: 1.5rem;
 }
 
-.fifthtwo .fiftwo a{
+.fifthtwo .fiftwo a {
     color: #222;
 }
 
-.fifthone{
+.fifthone {
     margin: 0px 0px 24px;
     /* border: solid red; */
     width: 50%;
@@ -364,20 +415,21 @@ center{
     margin-bottom: 24px;
 }
 
-.fifthone p{
+.fifthone p {
     font-size: 30px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #222;
     text-align: center;
 }
-.fifthone p span{
+
+.fifthone p span {
     color: orangered;
 }
 
 
 /* ----------SIXSTH SECTION----- */
 
-.sixthbody{
+.sixthbody {
     /* border: solid red; */
     /* width: 80%; */
     margin: auto;
@@ -386,112 +438,131 @@ center{
     line-height: 5em;
     padding: 70px 0px;
 }
-.sixthone p{
+
+.sixthone p {
     /* border: solid green; */
     text-align: center;
     font-size: 30px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-.sixthone p span{
+
+.sixthone p span {
     color: orangered;
 }
-.p-grid{
+
+.p-grid {
     /* border: solid yellow; */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     width: 70%;
-    padding: 20px 0px ;
+    padding: 20px 0px;
     margin: auto;
     line-height: 2em;
 }
-.img-grid{
-    /* border: solid green; */
+
+.img-grid {
+    /* border: solid green;  */
     margin-top: 5em;
     display: flex;
     justify-content: center;
     gap: 2em;
 }
-.img-left img{
+
+.img-left img {
     border-radius: 10px;
 }
-.img-middle img{
+
+.img-middle img {
     border-radius: 10px;
 }
-.img-right img{
+
+.img-right img {
     border-radius: 10px;
 }
 
 /* ------------SEVEN SECTION------- */
 
 
-.seven-body{
+.seven-body {
     /* border: solid green; */
     margin: 50px 0px;
 }
-.img-seven{
+
+.img-seven {
     display: flex;
     justify-content: center;
 }
-.sevenone p{
+
+.sevenone p {
     text-align: center;
     font-size: 30px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0px 0px 48px;
     color: #222;
 }
-.seventwo p{
+
+.seventwo p {
     font-size: 18px;
     margin: 32px 0px 0px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #222;
     text-align: center;
 }
-.seventwo p span{
+
+.seventwo p span {
     color: orange;
 }
 
 /* -------FOOTER SECTION---- */
 
-.footerbody{
+.footerbody {
     margin: 0px 98px;
     padding: 64px 30px;
+    /* border: solid red; */
 }
-.footerone{
+
+.footerone {
     /* border: solid green; */
     display: flex;
-    padding:0px 0px 25px 0px;
+    padding: 0px 0px 25px 0px;
     border-bottom: 1px solid black;
 }
-.footerul{
+
+.footerul {
     display: flex;
     margin: 0px 0px 0px 64px;
 }
-.footerul div h3{
+
+.footerul div h3 {
     font-size: 16px;
     color: #222;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-.footerul div ul{
+
+.footerul div ul {
     margin: 8px 0px 0px;
 }
-.footerul div ul li{
+
+.footerul div ul li {
     margin: 4px 0px 0px;
     list-style: none;
 }
-.footerul div ul li a{
+
+.footerul div ul li a {
     text-decoration: none;
     color: #222;
     font-size: 14px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-.flexstart{
+
+.flexstart {
     /* border: solid green; */
     flex-grow: 1;
     text-align: end;
     /* display: flex; */
 }
 
-.flexstart a{
+.flexstart a {
     text-decoration: none;
     color: #FFF;
     font-size: 18px;
@@ -516,196 +587,280 @@ center{
 
 /* ----------MEDIA QUERY---------- */
 
-@media(max-width:1300px){
+@media(max-width:1300px) {
     /* -------THIRD SECTION QUERY---- */
 
-    .third-body{
+    .third-body {
         width: 100%;
+    }
+    .footerbody{
+        margin: 0;
     }
 }
 
-@media(max-width:1128px){
+@media(max-width:1128px) {
+
     /* -----HEADER QUERY----- */
-    .right-nav span{
+    .right-nav span {
         display: none;
     }
-    nav{
+
+    nav {
         width: 100%;
+    }
+    .img-grid{
+        display: none;
     }
 
     /* -----CARDS QUERY--- */
-    .cards-body{
+    .cards-body {
         width: 95%;
-    } 
+    }
 
     /* -------THIRD SECTION QUERY---- */
-    .third-body{
-        width: 100%;
-    }
-    .thirdone{
+    .third-body {
         width: 100%;
     }
 
-    .third h2{
+    .thirdone {
+        width: 100%;
+    }
+
+    .third h2 {
         width: 70%;
     }
 
 
     /* -------FIFTH QUERY------ */
-    .fifthtwo{
+    .fifthtwo {
         width: 95%;
     }
 }
-@media(max-width:1105px){
+
+@media(max-width:1105px) {
+
     /* ------GRID QUERY------- */
-    .image-section{
+    .image-section {
         width: 100%;
         grid-template-columns: repeat(7, 1fr);
     }
 
 }
-@media(max-width:1032px){
+
+@media(max-width:1032px) {
+
     /* -------FIFTH QUERY------ */
-    .fifthtwo{
+    .fifthtwo {
         width: 100%;
     }
 
-    .fiftwo{
+    .fiftwo {
         width: 100%;
     }
-    .fifthone{
+
+    .fifthone {
         width: 60%;
     }
 }
-@media(max-width:900px){
+
+@media(max-width:900px) {
+
     /* ------GRID QUERY----- */
-    .image-section{
+    .image-section {
         width: 100%;
         grid-template-columns: repeat(6, 1fr);
     }
 }
 
-@media(max-width:885px){
-     /* -----CARDS QUERY--- */
-    .cards-body{
+@media(max-width:885px) {
+
+    /* -----CARDS QUERY--- */
+    .cards-body {
         width: 96%;
     }
 }
-@media (max-width:781px){
+
+@media (max-width:781px) {
+
     /* -----HEADER QUERY----- */
-    .left-nav ul{
+    .left-nav ul {
         flex-wrap: wrap;
     }
 
     /* ------GRID QUERY----- */
-    .image-section{
+    .image-section {
         width: 100%;
         grid-template-columns: repeat(5, 1fr);
     }
 
     /* -------THIRD SECTION QUERY---- */
-    .third-body{
+    .third-body {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         width: 70%;
     }
 
-    .third h2{
+    .third h2 {
         width: 70%;
     }
 
     /* -------FIFTH QUERY------ */
-    .fifthtwo{
+    .fifthtwo {
         width: 100%;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
-    .fiftwo{
+
+    .fiftwo {
         width: 100%;
     }
-    .fiftwo img{
+
+    .fiftwo img {
         width: 100%;
     }
-    .fifthone{
+
+    .fifthone {
         width: 90%;
     }
+    .footerone{
+        display: block;
+        /* border: solid green; */
+    }
+    .footerul{
+        /* border: solid yellow; */
+        margin: 0;
+        /* width: 100%; */
+    }
 }
-    
-@media (max-width:640px){
+
+@media (max-width:640px) {
+
     /* -----HEADER QUERY----- */
-    .left-nav ul{
+    .left-nav ul {
         display: none;
     }
-    .right-nav a{
+
+    .right-nav a {
         display: none;
     }
-    .menu{
+
+    .menu {
         display: block;
     }
 
 
     /* -------CARDS QUERY---- */
 
-    .cards-body{
+    .cards-body {
         display: block;
         width: 90%;
     }
-    .card{
+
+    .card {
         width: 100%;
     }
 
 
     /* -------GRIDS QUERY----- */
-    .image-section{
+    .image-section {
         width: 100%;
         grid-template-columns: repeat(3, 1fr);
     }
 
     /* ------FIFTH--- */
-    .fifthone{
+    .fifthone {
         width: 90%;
     }
+    .fourthbody iframe{
+        width: 100%;
+    }
 }
-@media(max-width:450px){
+
+@media(max-width:450px) {
+
     /* ------GRID QUERY----- */
-    .image-section{
+    .image-section {
         width: 100%;
         grid-template-columns: repeat(2, 1fr);
     }
 
     /* -------THIRD SECTION QUERY---- */
-    .third-body{
+    .third-body {
         display: grid;
         width: 100%;
         grid-template-columns: 1fr;
     }
 
-    .third h2{
+    .third h2 {
         width: 100%;
     }
+
     /* ------FIFTH----- */
-    .fifthone{
+    .fifthone {
         width: 90%;
+    }
+    .footerul{
+        display: block;
+        gap: 2em;
     }
 }
 
-@media(max-width:376px){
+@media(max-width:376px) {
+
     /* -------THIRD SECTION QUERY---- */
-    .third h2{
+    .third h2 {
         width: 100%;
     }
+
     /* ----FIFTH----- */
-    .fifthone{
+    .fifthone {
         width: 90%;
     }
 }
 
-@media(max-width:321px){
-    .third h2{
+@media(max-width:321px) {
+    .third h2 {
         width: 91%;
     }
+
     /* ---FIFTH----- */
-    .fifthone{
+    .fifthone {
         width: 90%;
+    }
+}
+
+@media (max-width: 767px) {
+    .right-hero {
+        display: none;
+    }
+
+    .left-hero {
+        width: 100%;
+        padding: 0;
+    }
+
+    .middle-info {
+        display: none;
+    }
+    .img-grid{
+        display: none;
+    }
+    .lefthbox{
+        width: 100%;
+        margin: 0;
+    }
+    
+}
+@media(max-width:484px){
+    .lefthbox h1{
+        /* border: solid green; */
+        font-size: 30px;
+        margin: 0;
+        padding: 0;
+    }
+    .lefthbox .hs{
+        font-size: 30px;
+        padding: 0;
+        margin: 0;
     }
 }

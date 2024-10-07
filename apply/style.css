@@ -276,10 +276,39 @@ nav{
     .left-nav ul{
         flex-wrap: wrap;
     }
+    .footerbody{
+        padding: 10px;
+        margin: 0;
+    }
+    .footerone{
+        display: block;
+    }
+    .footerul{
+        margin: 0;
+    }
+    .footerul div{
+        /* border: solid red; */
+        margin: 0;
+    }
 }
 @media (max-width:767px){
     .image{
         display: none;
+    }
+    .Sticky-part{
+        display: none;
+    }
+    .second{
+        width: 100%;
+    }
+    .secondone{
+        width: 100%;
+    }
+    .secondone p{
+        width: 100%;
+    }
+    .secondone ol{
+        width: 100%;
     }
 }
 @media (max-width:639px){
@@ -299,5 +328,14 @@ nav{
     }
     .left-body{
         width: 100%;
+    }
+}
+@media(max-width:450px){
+    .fifthone {
+        width: 90%;
+    }
+    .footerul{
+        display: block;
+        gap: 2em;
     }
 }
